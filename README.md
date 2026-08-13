@@ -43,7 +43,14 @@ Two separate projects, each with their own `package.json`. You run both at the s
 
 ## Getting started
 
-You'll need Node.js installed. Open two terminals.
+You'll need Node.js installed.
+
+```bash
+git clone https://github.com/ArshKaushik/padre-ginos.git
+cd padre-ginos   # this is the repo root
+```
+
+Then open two terminals, both starting from the repo root.
 
 **1. Start the API (port 3000)**
 
@@ -56,7 +63,7 @@ npm run dev
 **2. Start the React app (port 5173)**
 
 ```bash
-cd padre-ginos
+cd padre-ginos   # the frontend folder, inside the repo root
 npm install
 npm run dev
 ```
