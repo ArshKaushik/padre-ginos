@@ -15,11 +15,19 @@ export default defineConfig({
             },
         },
     },
-    plugins: [TanStackRouterVite(), react()],
-    test: {
-        environment: "happy-dom",
-        coverage: {
-            reporter: ["text", "json", "html"],
-        },
-    },
+    plugins: [
+        TanStackRouterVite(),
+        react({
+            babel: {
+                plugins: [
+                    [
+                        "babel-plugin-react-compiler",
+                        {
+                            target: "19",
+                        },
+                    ],
+                ],
+            },
+        }),
+    ],
 });
